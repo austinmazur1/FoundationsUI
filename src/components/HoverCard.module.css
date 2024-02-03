@@ -1,0 +1,43 @@
+@keyframes mymove {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+.HoverIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f1ed;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    color: black;
+    box-shadow: 3px 3px;
+   
+}
+
+
+.Box {
+    background-color: #f2f1ed;
+    width: 10rem;
+    height: 15rem;
+    border-radius: 5px;
+    display: none;
+}
+.HoverIcon:hover {
+    background-color: #dbdad5;
+    cursor:default;
+    transition-delay: 100ms;
+     animation-name: mymove;
+    animation-duration: 4s; 
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem
+}
